@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 20px;
+}
+.jumbotron h1 {
+  text-align: center;
+}
+img {
+  max-width: inherit;
+  height: auto;
+}
+li {
+  max-width: 200px;
+  list-style: none;
+  justify-self: center;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding-left: 10px;
+  justify-content: center;
+}
+.btns {
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 100px));
+  justify-content: center;
+}
+.search {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.modal {
+  margin-top: 10%;
+  display: none;
+}
+
+.gif-well{
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .btns {
+    justify-content: space-between;
+  }
+}
