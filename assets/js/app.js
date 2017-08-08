@@ -36,7 +36,7 @@ $(function() {
   $('.btns').append(btn).on('click', '.btn-gif', (event) => {
     $('.gif-well').css('display', 'block');
     let animal = event.target.id;
-    let url = `http://api.giphy.com/v1/gifs/search?q=${animal}&api_key=dc6zaTOxFJmzC&limit=30`;
+    let url = `http://api.giphy.com/v1/gifs/search?q=${animal}&api_key=b259548a429745c7adb20b70762ac62c&limit=30`;
     let el = '';
     $.get(url, (res) => {
       let gifs = res.data;
